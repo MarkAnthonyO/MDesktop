@@ -19,3 +19,6 @@ gnome-software
 xed
 xdg-user-dirs
 xdg-user-dirs-gtk
+qt6ct
+nwg-look
+adw-gtk-theme

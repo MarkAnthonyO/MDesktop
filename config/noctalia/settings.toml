@@ -41,9 +41,29 @@ capsule_opacity    = 1.0
 # capsule_border   = "outline"   # omit this key for no border by default
 capsule_border_width = 1.0          # outline thickness in logical pixels (0-8), drawn only with capsule_border
 
-start  = ["active_window"]
-center = ["media"]
+start  = ["media"]
+center = []
 end    = ["tray", "privacity", "bluetooth", "network", "volume", "brightness", "battery", "clock", "notifications"]
+
+[shell.panel]
+control_center_placement = "floating"
+floating_offset = 10
+
+[osd]
+position = "bottom_right"
+offset_x = 10
+offset_y = 10
+
+[widget.media]
+hide_album_art = false
+title_scroll = "always"
+hide_when_no_media = true
+hide_artist = false
+artist_first = false
+art_size     = 24
+
+[widget.clock]
+format = "{:%-I:%M %p}"
 
 [hooks]
 colors_changed = "$HOME/.config/noctalia/hooks/reload.sh"
